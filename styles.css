@@ -78,6 +78,24 @@ button {
   transform: translateY(4px);
 }
 
+
+
+/* Style buttons */
+.btn {
+    margin-left: 10px;
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
 /* ==== MAIN ===================================== */
 .main-page {
   display: flex;
@@ -88,13 +106,14 @@ button {
   color: lightgray;
   font-weight: 800;
   font-family: "Poppins";
-  font-size: 18px;
+  font-size: 28px;
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
 
 .block-left {
-  width: 300px;
+    padding-top: 50px;
+  width: 600px;
   height: 300px;
 }
 
