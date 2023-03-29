@@ -1,5 +1,5 @@
 var i = 0;
-var txt = "Lorem ipsum dummy text blabla.";
+var txt = "Great stuff! Cant wait to check out the Try it Yourself!";
 var speed = 50;
 
 function typeWriter() {
@@ -8,4 +8,14 @@ function typeWriter() {
     i++;
     setTimeout(typeWriter, speed);
   }
+}
+
+// ========== chat =============================================
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
 }

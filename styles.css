@@ -17,8 +17,8 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
-    transform: scale(110deg);
+  text-decoration: underline;
+  transform: scale(110deg);
 }
 
 header {
@@ -51,31 +51,29 @@ header {
   font-family: "Roboto";
 }
 
-.button{
-    margin-top: 10px;
-    margin-left: 70px;
-    width: 180px;
-    height: 55px;
-    background-color: rgba(132, 222, 132, 0.644);
-    color: #fff;
-    font-size: 22px;
-    border-radius: 8px;
-    letter-spacing: 0.6px;
-    font-weight: 600;
-
+.button {
+  margin-top: 10px;
+  margin-left: 70px;
+  width: 180px;
+  height: 55px;
+  background-color: rgba(132, 222, 132, 0.644);
+  color: #fff;
+  font-size: 22px;
+  border-radius: 8px;
+  letter-spacing: 0.6px;
+  font-weight: 600;
 }
 
 .button:hover {
-    cursor: pointer;
-    transform: scale(110%);
-    background-color: rgba(132, 222, 132, 0.541);
-    
+  cursor: pointer;
+  transform: scale(110%);
+  background-color: rgba(132, 222, 132, 0.541);
 }
 
 /* ==== MAIN ===================================== */
 .main-page {
-    display: flex;
-    margin: 20px;
+  display: flex;
+  margin: 20px;
 }
 
 .main-items {
@@ -87,48 +85,122 @@ header {
   margin-top: 20px;
 }
 
-.icon-download{
-    width: 30px;
-    height: 30px;
-    margin-left: 5px;
-    display: flex;
-
+.icon-download {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  display: flex;
 }
 
-.block-left{
-    width: 300px;
-    height: 300px;
+.block-left {
+  width: 300px;
+  height: 300px;
 }
 
-.block-right{
-    display: flex;
-    width: 500px;
-    height: 450px;
-    gap: 10px;
-    margin-left: 50px;
-
+.block-right {
+  display: flex;
+  width: 500px;
+  height: 450px;
+  gap: 10px;
+  margin-left: 50px;
 }
 
-.block-random{
-    margin-top: 60px;
+.block-random {
+  margin-top: 60px;
 }
 .block-upgrade {
-    margin-top: 20px;
-
-
+  margin-top: 20px;
 }
-.img-random{
-    width: 500px;
-    height: 300px;
-    border-radius: 5px;
+.img-random {
+  width: 500px;
+  height: 300px;
+  border-radius: 5px;
 }
 
-.img-upgrade{
-    width: 500px;
-    height: 400px;
-    padding: 5px;
+.img-upgrade {
+  width: 500px;
+  height: 400px;
+  padding: 5px;
 }
 
-.block-promo{
-    margin-left: 50px;
+.block-promo {
+  margin-left: 50px;
+}
+
+/* ===== CHAT =================================================== */
+ .chat-popup {
+  box-sizing: border-box;
+  margin-left: 950px;
+  
+}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
 }
