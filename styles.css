@@ -1,5 +1,5 @@
 body {
-  width: 1020px;
+  width: 1440px;
   height: 976;
   background-color: black;
   color: green;
@@ -45,17 +45,37 @@ header {
 }
 
 .header-link {
-  width: 150px;
+  width: 300px;
   height: 50px;
+  font-size: 24px;
+  font-family: "Roboto";
 }
 
-.header-link + .header-link {
-  margin-left: 0px;
+.button{
+    margin-top: 10px;
+    margin-left: 70px;
+    width: 180px;
+    height: 55px;
+    background-color: rgba(132, 222, 132, 0.644);
+    color: #fff;
+    font-size: 22px;
+    border-radius: 8px;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+
 }
 
+.button:hover {
+    cursor: pointer;
+    transform: scale(110%);
+    background-color: rgba(132, 222, 132, 0.541);
+    
+}
+
+/* ==== MAIN ===================================== */
 .main-page {
     display: flex;
-    margin: 70px 20px;
+    margin: 20px;
 }
 
 .main-items {
@@ -77,25 +97,38 @@ header {
 
 .block-left{
     width: 300px;
-    height: 500px;
+    height: 300px;
 }
 
 .block-right{
     display: flex;
     width: 500px;
-    height: 500px;
+    height: 450px;
     gap: 10px;
+    margin-left: 50px;
 
 }
 
 .block-random{
-    width: 250px;
-    height: 250px;
-    background-color: #fff;
+    margin-top: 60px;
+}
+.block-upgrade {
+    margin-top: 20px;
+
+
+}
+.img-random{
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
 }
 
-.block-upgrade{
-    width: 250px;
-    height: 250px;
-    background-color: #fff;
+.img-upgrade{
+    width: 500px;
+    height: 400px;
+    padding: 5px;
+}
+
+.block-promo{
+    margin-left: 50px;
 }

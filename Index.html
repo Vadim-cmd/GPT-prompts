@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles.css" />
+    <script src="/script.js"></script>
     <title>Document</title>
   </head>
   <body>
     <header>
-      <img src="/img/logo gpt.png" alt="" />
+      <img src="/img/logo gpt.png" alt="logo" />
       <div class="header__logo">GPT Prompts</div>
 
       <ul class="header-pages">
@@ -20,47 +21,63 @@
           <a href="">Subscribe</a>
         </li>
         <li class="header-link">
-          <a href="">FAQ</a>
+          <a href="">Prompt Engineering</a>
         </li>
       </ul>
+      <button class="button">Shop</button>
     </header>
     <div class="main-page">
       <div class="block-left">
         <ul>
           <li class="main-items">
-            <a href="">QA prompts ____&dArr; download</a>
+            <a href="">QA prompts &dArr;</a>
           </li>
           <li class="main-items">
-            <a href="">Frontend Prompts</a>
+            <a href="">Frontend Prompts &dArr;</a>
           </li>
           <li class="main-items">
-            <a href="">Interview</a>
+            <a href="">Interview &dArr;</a>
           </li>
           <li class="main-items">
-            <a href="">QA prompts</a>
+            <a href="">QA prompts &dArr;</a>
           </li>
           <li class="main-items">
-            <a href="">Frontend Prompts</a>
+            <a href="">Frontend Prompts &dArr;</a>
           </li>
           <li class="main-items">
-            <a href="">Interview</a>
+            <a href="">Interview &dArr;</a>
           </li>
           <li class="main-items">
-            <a href="">QA prompts</a>
+            <a href="">QA prompts &dArr;</a>
           </li>
           <li class="main-items">
-            <a href="">Frontend Prompts</a>
+            <a href="">Frontend Prompts &dArr;</a>
           </li>
           <li class="main-items">
-            <a href="">Interview</a>
+            <a href="">Interview &dArr;</a>
           </li>
         </ul>
       </div>
-    <div class="block-right">
-      <div class="block-random"></div>
-      <div class="block-upgrade"></div>
+      <div class="block-right">
+        <div class="block-random">
+          <h1>Random Input</h1>
+          <img src="/img/random.png" alt="" class="img-random" />
+        </div>
+        <div class="block-upgrade">
+          <h1>Upgraded Input</h1>
+          <img src="/img/upgrade.png" alt="" class="img-upgrade" />
+        </div>
+      </div>
     </div>
+    <div class="block-promo">
+      <h1 class="title">Save time and get structured answers from chat GPT</h1>
+      <button class="button">Buy Now</button>
     </div>
 
+    <h1>Typewriter</h1>
+
+    <button onclick="typeWriter()" class="button">Click me</button>
+
+    <p id="demo"></p>
   </body>
 </html>
