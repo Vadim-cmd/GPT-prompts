@@ -36,8 +36,6 @@ header {
   letter-spacing: 0.3px;
   font-size: 30px;
   font-family: "Roboto";
-  
-
 }
 
 .header-pages {
@@ -54,8 +52,11 @@ header {
 .header-link + .header-link {
   margin-left: 0px;
 }
+
 .main-page {
+    display: flex;
     margin: 70px 20px;
+    flex-direction: row;
 }
 
 .main-items {
@@ -67,7 +68,6 @@ header {
   margin-top: 20px;
 }
 
-
 .icon-download{
     width: 30px;
     height: 30px;
@@ -76,21 +76,26 @@ header {
 
 }
 
+.block-left{
+    width: 300px;
+    height: 500px;
+}
 
 .block-right{
     display: flex;
-
+    width: 500px;
+    height: 500px;
+    position: relative;
 }
+
 .block-random{
     width: 250px;
     height: 250px;
-    color: #fff;
-
+    background-color: #fff;
 }
+
 .block-upgrade{
     width: 250px;
     height: 250px;
-    color: green;
-
-
+    background-color: #fff;
 }
