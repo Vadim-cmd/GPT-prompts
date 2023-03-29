@@ -1,1 +1,21 @@
+body {
+    border-color: black;
+}
 
+.header__logo{
+
+}
+.header-link {
+    
+}
+
+.main-page{
+
+}
+
+.main-items {
+    color: lightgray;
+    font-weight: 800;
+    font-family: "Poppins";
+    font-size: 28px;
+}
