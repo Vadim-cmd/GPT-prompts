@@ -26,13 +26,16 @@ header {
   margin-top: 20px;
   display: flex;
   height: 35px;
+  align-items: center;
+  justify-content: center;
 }
 
 .header__logo {
   margin: 20px;
   width: 300px;
   letter-spacing: 0.3px;
-  font-size: 470px;
+  font-size: 30px;
+  font-family: "Roboto";
   
 
 }
@@ -40,7 +43,7 @@ header {
 .header-pages {
   display: flex;
   width: 976px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .header-link {
@@ -52,7 +55,7 @@ header {
   margin-left: 0px;
 }
 .main-page {
-    margin: 100px;
+    margin: 70px 20px;
 }
 
 .main-items {
@@ -61,4 +64,33 @@ header {
   font-family: "Poppins";
   font-size: 18px;
   letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+
+
+.icon-download{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    display: flex;
+
+}
+
+
+.block-right{
+    display: flex;
+
+}
+.block-random{
+    width: 250px;
+    height: 250px;
+    color: #fff;
+
+}
+.block-upgrade{
+    width: 250px;
+    height: 250px;
+    color: green;
+
+
 }
