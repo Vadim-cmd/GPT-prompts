@@ -154,7 +154,7 @@ button {
 /* Style buttons */
 .btn {
   width: 170px;
-  margin-top: 17px;
+  margin: 17px;
   background-color: DodgerBlue;
   border: none;
   color: white;
@@ -194,16 +194,7 @@ button {
 
 .main-link {
   color: indigo;
-  padding: 10px;
-}
-
-.badge {
-  background-color: red;
-  color: white;
-  padding: 0px 4px;
-  text-align: center;
-  border-radius: 5px;
-  margin: 5px;
+  padding: 25px;
 }
 
 .block-random {
@@ -237,13 +228,8 @@ button {
 
 .container-titles{
   margin: 0;
-  width: 300px;
-  height: 300px;
-}
-
-.container-buttons{
-  width: 300px;
-  height: 300px;
+  width: 700px;
+  height: 400px;
 }
 
 /* ==========adapt ============================== */
@@ -272,6 +258,10 @@ button {
   ...;
 }
 /* ====== subscribe ============================================ */
+.block-subscribe{
+  margin-top: 100px;
+}
+
 .email {
   display: flex;
   justify-content: center;
@@ -377,6 +367,8 @@ input[type="submit"]:hover {
 
 /* === footer ===================================================== */
 footer {
+  margin: 0;
+  padding: 0;
   background-color: #1a33452a;
   height: 350px;
 }
