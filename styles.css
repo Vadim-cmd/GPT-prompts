@@ -30,8 +30,6 @@
 }
 
 body {
-  width: 100%;
-  height: 100%;
   background-color: #f8f9fa;;
   color: rgb(12, 51, 12);
   margin: 0 auto;
@@ -42,6 +40,7 @@ body {
 ul {
   padding: 0;
 }
+
 li {
   display: flex;
   text-decoration: none;
@@ -60,29 +59,41 @@ a:hover {
 header {
   width: 100%;
   margin: 0px;
-  padding: 40px;
+  padding: 20px 150px;
   display: flex;
   position: sticky; top: 0;
-  height: 135px;
+  height: 115px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-image: linear-gradient(127deg,#384DFF 0,#24CDFF 91%);
 }
 
-.img-logo {
-  margin: 10px;
+.header-left{
+  width: 50%;
+  display: flex;
+  align-items: start;
 }
+
+.img-logo {
+
+}
+
 .header__logo {
-  margin: 20px;
   width: 300px;
   letter-spacing: 0.3px;
   font-size: 30px;
+  margin: 40px;
+}
+
+.header-right {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .header-pages {
   display: flex;
-  width: 565px;
-  margin-top: 40px;
   justify-content: space-between;
   align-items: center;
 }
@@ -91,10 +102,15 @@ header {
   height: 50px;
   font-size: 24px;
   font-family: "Roboto";
+  align-items: center;
+}
+
+.header-link+.header-link {
+  margin-left: 40px;
 }
 
 .header-btn {
-  margin-left: 40px;
+  margin: 40px;
   padding: 15px 25px;
   font-size: 24px;
   text-align: center;
@@ -110,7 +126,6 @@ header {
   color: #24CDFF;
   border: 1px solid #fff;
   background-color: #fff;
-
 }
 
 button {
@@ -138,11 +153,12 @@ button {
 
 /* Style buttons */
 .btn {
-  margin-left: 10px;
+  width: 170px;
+  margin-top: 17px;
   background-color: DodgerBlue;
   border: none;
   color: white;
-  padding: 12px 30px;
+  padding: 8px 10px;
   cursor: pointer;
   font-size: 20px;
 }
@@ -152,21 +168,33 @@ button {
   background-color: RoyalBlue;
 }
 
+.wrapper {
+  width: 100%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 160px;
+
+}
+
 /* ==== MAIN ===================================== */
 .main-page {
   display: flex;
-  width: 100%;
-  height: 1065px;
+  height: 665px;
   background-color: linear-gradient(127deg,#384DFF 0,#1ddc96 91%);
+  margin: 20px;
 }
 
 .main-items {
-  color: lightgray;
   font-weight: 800;
   font-family: "Poppins";
   font-size: 22px;
   letter-spacing: 0.5px;
-  margin-top: 20px;
+}
+
+.main-link {
+  color: indigo;
+  padding: 10px;
 }
 
 .badge {
@@ -178,160 +206,44 @@ button {
   margin: 5px;
 }
 
-.block-left {
-  padding: 60px;
-  width: 600px;
-  height: 450px;  
-}
-
-.block-right {
-  padding: 60px;
-  display: flex;
-  width: 500px;
-  height: 450px;
-  gap: 10px;
-}
-
 .block-random {
   margin-top: 60px;
 }
+
 .block-upgrade {
   margin-top: 20px;
 }
 
 .img-random {
-  width: 500px;
-  height: 300px;
+  width: 900px;
+  height: 500px;
   border-radius: 5px;
 }
 
 .img-upgrade {
-  width: 500px;
-  height: 400px;
+  width: 900px;
+  height: 600px;
   padding: 5px;
 }
 
 .block-promo {
-  margin: 60px;
+  margin: 75px;
 }
 
-/* ===== CHAT =================================================== */
-* {
-  box-sizing: border-box;
+.block__prompts {
+  display: flex;
+  margin: 75px;
 }
 
-/* Button used to open the chat form - fixed at the bottom of the page */
-.open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
+.container-titles{
+  margin: 0;
+  width: 300px;
+  height: 300px;
 }
 
-/* The popup chat - hidden by default */
-.form-popup {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-}
-
-/* Add styles to the form container */
-.form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: white;
-}
-
-/* Full-width textarea */
-.form-container textarea {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-  resize: none;
-  min-height: 200px;
-}
-
-/* When the textarea gets focus, do something */
-.form-container textarea:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for the submit/login button */
-.form-container .btn {
-  background-color: #04aa6d;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom: 10px;
-  opacity: 0.8;
-}
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: red;
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover,
-.open-button:hover {
-  opacity: 1;
-}
-
-/* ========= counter ================================================== */
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 250px;
-  height: 250px;
-  padding: 0 5px;
-}
-
-.row {
-  margin: 0 -5px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 10px;
-  }
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #353740;
-  color: white;
-  border-radius: 4px;
-}
-
-.fa {
-  font-size: 50px;
+.container-buttons{
+  width: 300px;
+  height: 300px;
 }
 
 /* ==========adapt ============================== */
@@ -359,100 +271,45 @@ button {
 @media only screen and (min-width: 1200px) {
   ...;
 }
-
-/* Tooltip container */
-.tooltip {
-  margin-top: 50px;
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+/* ====== subscribe ============================================ */
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
 }
 
-/* Tooltip text */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-
-  /* Position the tooltip text */
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -60px;
-
-  /* Fade in tooltip */
-  opacity: 0;
-  transition: opacity 0.3s;
+.btn-subscribe {
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit;
+  transition: transform 0.7s ease-in-out;
+  margin-left: 10px;
 }
 
-/* Tooltip arrow */
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
+.btn-subscribe:hover {
+  transform: rotate(360deg);
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
+.img-email {
+  width: 70px;
+  height: 70px;
 }
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+input[type="email"] {
+  padding: 10px;
+  border: 2px solid #314de4;
+  outline: none;
+  border-radius: 5px;
+  font-size: 24px;
+  color: #314de4;
 }
 
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-/* Style the back side */
-.flip-card-back {
-  background-color: dodgerblue;
-  color: white;
-  transform: rotateY(180deg);
+.subscribe {
+  font-size: 60px;
+  color: #314de4;
+  font-family: Arial;
 }
 
 /* ====== contact form =========================== */
@@ -494,6 +351,8 @@ input[type="submit"]:hover {
 
 /* Create two columns that float next to eachother */
 .column {
+  display: flex;
+  margin-left: 600px;
   float: left;
   width: 50%;
   margin-top: 6px;
@@ -514,4 +373,28 @@ input[type="submit"]:hover {
     width: 100%;
     margin-top: 0;
   }
+}
+
+/* === footer ===================================================== */
+footer {
+  background-color: #1a33452a;
+  height: 350px;
+}
+.footer-block{
+  width: 300px;
+  padding: 70px;
+
+}
+.footer-column{
+
+}
+
+.footer-social{
+
+}
+.social-link{
+
+}
+.social-icon{
+
 }

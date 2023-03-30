@@ -15,73 +15,30 @@
   </head>
   <body>
     <header>
-      <img src="/img/logo-star.png" alt="logo" class="img-logo" />
-      <div class="header__logo">chat GPT Prompts</div>
-
-      <ul class="header-pages">
-        <li class="header-link">
-          <a href="">Prompt Engineering</a>
-        </li>
-        <li class="header-link">
-          <a href="">Download</a>
-        </li>
-        <li class="header-link">
-          <a href="">Subscribe</a>
-        </li>
-        <li class="header-link">
-          <a href="">Blog</a>
-        </li>
-      </ul>
-      <button class="header-btn">Shop</button>
-    </header>
-    <div class="main-page">
-      <div class="block-left">
-        <ul>
-          <li class="main-items">
-            <span class="badge">New</span>
-            <a href=""
-              >QualityA prompts
-              <button class="btn">
-                <i class="fa fa-download"></i> Download
-              </button>
-            </a>
+      <div class="header-left">
+        <img src="/img/logo-star.png" alt="logo" class="img-logo" />
+        <a href=""><div class="header__logo">chat GPT Prompts</div> </a>
+      </div>
+      <div class="header-right">
+        <ul class="header-pages">
+          <li class="header-link">
+            <a href="">Prompt Engineering</a>
           </li>
-
-          <li class="main-items">
-            <a href=""
-              >Emailing prompts
-              <button class="btn">
-                <i class="fa fa-download"></i> Download
-              </button>
-            </a>
+          <li class="header-link">
+            <a href="">Download</a>
           </li>
-          <li class="main-items">
-            <a href=""
-              >Frontend prompts
-              <button class="btn">
-                <i class="fa fa-download"></i> Download
-              </button>
-            </a>
+          <li class="header-link">
+            <a href="">Subscribe</a>
           </li>
-          <li class="main-items">
-            <a href=""
-              >Inteview prompts
-              <button class="btn">
-                <i class="fa fa-download"></i> Download
-              </button>
-            </a>
+          <li class="header-link">
+            <a href="">Blog</a>
           </li>
-          <li class="main-items">
-            <a href=""
-              >Designer prompts 
-              <button class="btn">
-                <i class="fa fa-download"></i> Download
-              </button>
-            </a>
-          </li>
+          <button class="header-btn">Shop</button>
         </ul>
       </div>
-      <div class="block-right">
+    </header>
+    <div class="wrapper">
+      <div class="main-page">
         <div class="block-random">
           <h1>Random Input</h1>
           <img src="/img/random.png" alt="" class="img-random" />
@@ -91,128 +48,143 @@
           <img src="/img/upgrade.png" alt="" class="img-upgrade" />
         </div>
       </div>
-    </div>
-    <div class="block-promo">
-      <h1 class="title">Save time and get structured answers from chat GPT</h1>
-      <button class="button">Buy Now</button>
-    </div>
-    <!-- ======= Typewriter ============================================ -->
-    <h1>Typewriter</h1>
-    <button onclick="typeWriter()" class="button">Click me</button>
-    <p id="demo"></p>
-    <!-- ======== Chat ================================================================ -->
-    <div class="chat-popup" id="myForm">
-      <form action="/action_page.php" class="form-container">
-        <h1>Chat</h1>
 
-        <label for="msg"><b>Message</b></label>
-        <textarea placeholder="Type message.." name="msg" required></textarea>
-
-        <button type="submit" class="btn">Send</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">
-          Close
-        </button>
-      </form>
-    </div>
-
-    <!-- ========= Counter ================================== -->
-    <div class="row">
-      <div class="column">
-        <div class="card">
-          <p><i class="fa fa-user"></i></p>
-          <h3>110+</h3>
-          <p>Purchases</p>
+      <div class="block-promo">
+        <h1 class="title">
+          Save time and get structured answers from chat GPT
+        </h1>
+        <button class="button">Buy Now</button>
+      </div>
+        <!-- ====== Download ==================================================================== -->
+        <div class="block__prompts">
+          <div class="container-titles">
+            <ul>
+              <li class="main-items">
+                <a href="" class="main-link">QualityA prompts</a>
+              </li>
+              <li class="main-items">
+                <a href="" class="main-link">Emailing prompts </a>
+              </li>
+              <li class="main-items">
+                <a href="" class="main-link">Frontend prompts </a>
+              </li>
+              <li class="main-items">
+                <a href="" class="main-link">Inteview prompts </a>
+              </li>
+              <li class="main-items">
+                <a href="" class="main-link"
+                  >Designer prompts
+                  <span class="badge">New</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="container-buttons">
+            <button class="btn"><i class="fa fa-download"></i> Download</button>
+            <button class="btn"><i class="fa fa-download"></i> Download</button>
+            <button class="btn"><i class="fa fa-download"></i> Download</button>
+            <button class="btn"><i class="fa fa-download"></i> Download</button>
+            <button class="btn"><i class="fa fa-download"></i> Download</button>
+          </div>
         </div>
       </div>
 
-      <div class="column">
-        <div class="card">
-          <p><i class="fa fa-check"></i></p>
-          <h3>55+</h3>
-          <p>Industries</p>
-        </div>
-      </div>
+      <div class="subscribe email">Subscribe To Newsletter</div>
+    <div class="email">
+      <input type="email" placeholder="Enter Email" class="email" />
+      <button type="submit" class="btn-subscribe">
+        <img
+          src="https://i.ibb.co/CW5Wvry/buttonpng.png"
+          class="img-email"
+          alt="buttonpng"
+          border="0"
+        />
+      </button>
+    </div>
 
-      <div class="column">
-        <div class="card">
-          <p><i class="fa fa-smile-o"></i></p>
-          <h3>100+</h3>
-          <p>Happy Clients</p>
+      <div class="container">
+        <div style="text-align: center">
+          <h2>Contact Us</h2>
+          <p>Swing by for a cup of coffee, or leave us a message:</p>
         </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <p><i class="fa fa-coffee"></i></p>
-          <h3>100+</h3>
-          <p>Saved hours</p>
+        <div class="row">
+          <div class="column">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+              />
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+              <label for="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height: 170px"
+              ></textarea>
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
         </div>
       </div>
     </div>
-    <div class="tooltip">
-      Hover over me
-      <span class="tooltiptext">Tooltip text</span>
+   <footer>
+    <div class="footer-block">
+      <div class="footer-column">
+        <nav>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">Home</a>
+          </li>
+        </nav>
+      </div>
     </div>
+    <div class="footer-block">
+      <div class="footer-social">
+        <div class="social-link">
+          <a href="" class="social-icon"><img src="img-social" alt=""></a>
+          <a href="" class="social-icon"><img src="img-social" alt=""></a>
+          <a href="" class="social-icon"><img src="img-social" alt=""></a>
+          <a href="" class="social-icon"><img src="img-social" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-block">
+      <div class="footer-column">
+      </div>
+    </div>
+    
 
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img
-            src="img_avatar.png"
-            alt="Avatar"
-            style="width: 300px; height: 300px"
-          />
-        </div>
-        <div class="flip-card-back">
-          <h1>John Doe</h1>
-          <p>Architect & Engineer</p>
-          <p>We love that guy</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="container">
-      <div style="text-align: center">
-        <h2>Contact Us</h2>
-        <p>Swing by for a cup of coffee, or leave us a message:</p>
-      </div>
-      <div class="row">
-        <div class="column">
-          <img src="/img/globe.png" />
-        </div>
-        <div class="column">
-          <form action="/action_page.php">
-            <label for="fname">First Name</label>
-            <input
-              type="text"
-              id="fname"
-              name="firstname"
-              placeholder="Your name.."
-            />
-            <label for="lname">Last Name</label>
-            <input
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Your last name.."
-            />
-            <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-            </select>
-            <label for="subject">Subject</label>
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder="Write something.."
-              style="height: 170px"
-            ></textarea>
-            <input type="submit" value="Submit" />
-          </form>
-        </div>
-      </div>
-    </div>
+   </footer>
   </body>
 </html>
