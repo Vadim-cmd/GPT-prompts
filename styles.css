@@ -1,8 +1,8 @@
 body {
-  width: 1440px;
+  width: 100%;
   height: 100%;
-  background-color: black;
-  color: green;
+  background-color: #bbb;
+  color: rgb(12, 51, 12);
   margin: 0 auto;
   font-family: "Roboto";
   font-weight: normal;
@@ -28,13 +28,18 @@ a:hover {
 
 header {
   width: 100%;
-  margin-top: 20px;
+  margin: 0px;
+  padding: 40px;
   display: flex;
-  height: 35px;
+  height: 135px;
   align-items: center;
   justify-content: center;
+  background-color: #04aa6d;
 }
 
+.img-logo {
+  margin: 10px;
+}
 .header__logo {
   margin: 20px;
   width: 300px;
@@ -44,15 +49,20 @@ header {
 
 .header-pages {
   display: flex;
-  width: 976px;
-  margin-top: 50px;
+  width: 565px;
+  margin-top: 40px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-link {
-  width: 300px;
   height: 50px;
   font-size: 24px;
   font-family: "Roboto";
+}
+
+.header-btn {
+  margin-left: 40px;
 }
 
 button {
@@ -97,14 +107,13 @@ button {
 /* ==== MAIN ===================================== */
 .main-page {
   display: flex;
-  margin-top: 30px;
 }
 
 .main-items {
   color: lightgray;
   font-weight: 800;
   font-family: "Poppins";
-  font-size: 28px;
+  font-size: 22px;
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
@@ -112,18 +121,22 @@ button {
 .badge {
   background-color: red;
   color: white;
-  padding: 4px 8px;
+  padding: 0px 4px;
   text-align: center;
   border-radius: 5px;
+  margin: 5px;
 }
 
 .block-left {
-  padding-top: 50px;
+  padding: 60px;
   width: 600px;
-  height: 300px;
+  height: 450px;
+  background-color: #1ddc96;
+  
 }
 
 .block-right {
+  padding: 60px;
   display: flex;
   width: 500px;
   height: 450px;
@@ -136,6 +149,7 @@ button {
 .block-upgrade {
   margin-top: 20px;
 }
+
 .img-random {
   width: 500px;
   height: 300px;
@@ -149,6 +163,7 @@ button {
 }
 
 .block-promo {
+  margin: 60px;
 }
 
 /* ===== CHAT =================================================== */
@@ -271,7 +286,7 @@ button {
 }
 
 /* ==========adapt ============================== */
-4/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   ...;
 }
@@ -398,7 +413,9 @@ button {
 }
 
 /* Style inputs */
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -407,15 +424,15 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
-  background-color: #04AA6D;
+input[type="submit"] {
+  background-color: #04aa6d;
   color: white;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
 
@@ -443,7 +460,8 @@ input[type=submit]:hover {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column, input[type=submit] {
+  .column,
+  input[type="submit"] {
     width: 100%;
     margin-top: 0;
   }
