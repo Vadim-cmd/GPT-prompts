@@ -30,6 +30,7 @@
 }
 
 body {
+  min-height: 100vh;
   background-color: #f8f9fa;
   color: rgb(12, 51, 12);
   margin: 0 auto;
@@ -57,7 +58,6 @@ a:hover {
 }
 
 header {
-  width: 100%;
   margin: 0px;
   padding: 20px 150px;
   display: flex;
@@ -168,7 +168,7 @@ button {
   background-color: RoyalBlue;
 }
 
-.wrapper {
+.wrapper{
   width: 100%;
   display: block;
   align-items: center;
@@ -176,6 +176,12 @@ button {
   margin: 0px 160px;
 }
 
+
+[class*="__container"] {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
 /* = home ============================= */
 
 .home-page {
@@ -238,14 +244,14 @@ button {
 }
 
 .img-random {
-  width: 900px;
-  height: 500px;
+  width: 700px;
+  height: 250px;
   border-radius: 5px;
 }
 
 .img-upgrade {
-  width: 900px;
-  height: 600px;
+  width: 700px;
+  height: 500px;
   padding: 5px;
 }
 
@@ -289,51 +295,6 @@ button {
 @media only screen and (min-width: 1200px) {
   ...;
 }
-/* ====== subscribe ============================================ */
-.block-subscribe {
-  margin-top: 100px;
-}
-
-.email {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40px;
-}
-
-.btn-subscribe {
-  border: none;
-  cursor: pointer;
-  appearance: none;
-  background-color: inherit;
-  transition: transform 0.7s ease-in-out;
-  margin-left: 10px;
-}
-
-.btn-subscribe:hover {
-  transform: rotate(360deg);
-}
-
-.img-email {
-  width: 70px;
-  height: 70px;
-}
-
-input[type="email"] {
-  padding: 10px;
-  border: 2px solid #314de4;
-  outline: none;
-  border-radius: 5px;
-  font-size: 24px;
-  color: #314de4;
-}
-
-.subscribe {
-  font-size: 60px;
-  color: #314de4;
-  font-family: Arial;
-}
-
 /* ====== contact form =========================== */
 
 * {
@@ -404,6 +365,53 @@ footer {
   background-color: #1a33452a;
   height: 350px;
 }
+
+
+/* ====== subscribe ============================================ */
+.footer-subscribe {
+  margin-top: 20px;
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+.btn-subscribe {
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit;
+  transition: transform 0.7s ease-in-out;
+  margin-left: 10px;
+}
+
+.btn-subscribe:hover {
+  transform: rotate(360deg);
+}
+
+.img-email {
+  width: 70px;
+  height: 70px;
+}
+
+input[type="email"] {
+  padding: 10px;
+  border: 2px solid #314de4;
+  outline: none;
+  border-radius: 5px;
+  font-size: 24px;
+  color: #314de4;
+}
+
+.subscribe {
+  font-size: 60px;
+  color: #314de4;
+  font-family: Arial;
+}
+
 .footer-block {
   width: 300px;
   padding: 70px;
