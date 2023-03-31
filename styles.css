@@ -176,14 +176,37 @@ button {
   margin: 0px 160px;
 }
 
+/* = home ============================= */
+
+.home-page {
+  display: flex;
+  margin-top: 30px;
+
+}
+
 .prompt-eng {
-  width: 40%;
-  height: 850px;
-  font-size: 24px;
+  font-size: 26px;
+  width: 50%;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Anonymous Pro", monospace;
+  background-color: rgb(130, 129, 129);
+  /* background-color: rgb(25, 25, 25); */
+  border-radius: 15px;
+  padding: 25px;
+
 }
 
 .column-benefits {
   margin-top: 20px;
+}
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+.block-video {
+  margin: 80px;
+  background-color: #1a33452a;
+  border-radius: 55px;
 }
 
 /* ==== MAIN ===================================== */
