@@ -353,7 +353,7 @@ header {
 
 /* ===== products ============================================= */
 /* The grid: Four equal columns that floats next to each other */
-.column {
+/* .column {
   float: left;
   width: 25%;
   padding: 10px;
@@ -399,7 +399,7 @@ header {
   color: white;
   font-size: 35px;
   cursor: pointer;
-}
+} 
 
 /* ========== adapt ============================== */
 /* Extra small devices (phones, 600px and down) */
