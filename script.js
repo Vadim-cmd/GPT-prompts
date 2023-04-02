@@ -1,6 +1,8 @@
+//=========== typewriter ======================================
+
 var i = 0;
 var txt =
-  "Saving time, Personalization, Improving user experience, Better outcomes.With well-designed prompts, customers can complete tasks or get the information they need more quickly and efficiently. This can be especially valuable in customer service scenarios, where customers may be looking for quick answers or resolutions to their problems";
+  "Saving time, Personalization, Better user experience, Excelent outcomes.";
 var speed = 50;
 
 function typeWriter() {
@@ -11,13 +13,50 @@ function typeWriter() {
   }
 }
 
-// ========== chat =============================================
+//=========== slideshow ======================================
 
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length} ;
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+// =======================================
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+
+// =============================================
+/* Demo purposes only */
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
+
 

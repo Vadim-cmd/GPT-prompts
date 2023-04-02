@@ -30,6 +30,7 @@
 }
 
 body {
+  width: auto;
   min-height: 100vh;
   background-color: #f8f9fa;
   color: rgb(12, 51, 12);
@@ -58,6 +59,7 @@ a:hover {
 }
 
 header {
+  width: auto;
   margin: 0px;
   padding: 20px 150px;
   display: flex;
@@ -67,6 +69,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background-image: linear-gradient(127deg, #384dff 0, #24cdff 91%);
+  z-index: 5;
 }
 
 .header-left {
@@ -128,29 +131,6 @@ header {
   background-color: #fff;
 }
 
-button {
-  padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: rgba(0, 128, 0, 0.771);
-  border: none;
-  border-radius: 15px;
-}
-
-.button:hover {
-  border: 2px solid #ddd;
-  background-color: green;
-}
-
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 4px #666;
-  transform: translateY(4px);
-}
-
 /* Style buttons */
 .btn {
   width: 170px;
@@ -161,6 +141,7 @@ button {
   padding: 8px 10px;
   cursor: pointer;
   font-size: 20px;
+  border-radius: 8px;
 }
 
 /* Darker background on mouse-over */
@@ -168,38 +149,26 @@ button {
   background-color: RoyalBlue;
 }
 
-.wrapper{
-  width: 100%;
+.wrapper {
+  width: auto;
   display: block;
   align-items: center;
   justify-content: center;
   margin: 0px 160px;
 }
-
-
-[class*="__container"] {
-  max-width: 1310px;
-  margin: 0 auto;
-  padding: 0px 15px;
-}
 /* = home ============================= */
 
 .home-page {
   display: flex;
-  margin-top: 30px;
-
+  width: auto;
+  padding: 0px 150px;
 }
 
 .prompt-eng {
-  font-size: 26px;
-  width: 50%;
-  color: rgba(255, 255, 255, 0.75);
+  margin-top: 30px;
+  color: #384dff;
   font-family: "Anonymous Pro", monospace;
-  background-color: rgb(130, 129, 129);
-  /* background-color: rgb(25, 25, 25); */
-  border-radius: 15px;
-  padding: 25px;
-
+  padding: 35px;
 }
 
 .column-benefits {
@@ -207,7 +176,6 @@ button {
 }
 
 /* Google Fonts */
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 .block-video {
   margin: 80px;
@@ -218,59 +186,222 @@ button {
 /* ==== MAIN ===================================== */
 .main-page {
   display: flex;
-  height: 665px;
   background-color: linear-gradient(127deg, #384dff 0, #1ddc96 91%);
   margin: 20px;
 }
 
-.main-items {
-  font-weight: 800;
-  font-family: "Poppins";
-  font-size: 22px;
-  letter-spacing: 0.5px;
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-.main-link {
-  color: indigo;
-  padding: 25px;
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
 }
 
-.block-random {
-  margin-top: 60px;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.block-upgrade {
-  margin-top: 20px;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.img-random {
-  width: 700px;
-  height: 250px;
-  border-radius: 5px;
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
 
-.img-upgrade {
-  width: 700px;
-  height: 500px;
-  padding: 5px;
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #24cdff;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: royalblue;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .block-promo {
   margin: 75px;
 }
 
+/* ========== prompts ============= */
 .block__prompts {
+}
+
+.container-boxes {
   display: flex;
-  margin: 75px;
+
 }
 
-.container-titles {
-  margin: 0;
-  width: 700px;
-  height: 400px;
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
-/* ==========adapt ============================== */
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+/* ===== products ============================================= */
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* ========== adapt ============================== */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   ...;
@@ -295,141 +426,119 @@ button {
 @media only screen and (min-width: 1200px) {
   ...;
 }
-/* ====== contact form =========================== */
 
-* {
+/* ==== testimonials ================================================================== */
+.testimonials{
+  display: flex;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+figure.snip1390 {
+  font-family: 'Roboto', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+  background-color: #2C3447;
+  padding: 30px;
+  background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-/* Style inputs */
-input[type="text"],
-select,
-textarea {
+figure.snip1390 *,
+figure.snip1390 *:before,
+figure.snip1390 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+figure.snip1390 figcaption {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
 }
-
-input[type="submit"] {
-  background-color: #04aa6d;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
+figure.snip1390 h2,
+figure.snip1390 h4,
+figure.snip1390 blockquote {
+  margin: 0;
 }
-
-input[type="submit"]:hover {
-  background-color: #45a049;
+figure.snip1390 h2,
+figure.snip1390 h4 {
+  font-weight: 300;
 }
-
-/* Style the container/contact section */
-.container {
+figure.snip1390 h2 {
+  color: #ffffff;
+}
+figure.snip1390 h4 {
+  color: #a6a6a6;
+}
+figure.snip1390 blockquote {
+  font-size: 1em;
+  padding: 45px 20px 40px 50px;
+  margin-top: 30px;
+  background-color: #ffffff;
   border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 10px;
+  box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  position: relative;
 }
-
-/* Create two columns that float next to eachother */
-.column {
-  display: flex;
-  margin-left: 600px;
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
+figure.snip1390 blockquote:before {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 70px;
+  opacity: 0.25;
+  font-style: normal;
+  top: 0px;
+  left: 20px;
 }
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column,
-  input[type="submit"] {
-    width: 100%;
-    margin-top: 0;
-  }
+figure.snip1390 .profile {
+  width: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+  border: solid 5px #A6A57A;
 }
 
 /* === footer ===================================================== */
 footer {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 20px 120px;
+  display: flex;
   background-color: #1a33452a;
-  height: 350px;
+  color: #000;
+  height: 150px;
 }
 
-
-/* ====== subscribe ============================================ */
-.footer-subscribe {
-  margin-top: 20px;
-}
-
-.email {
+.footer-pages{
+  margin: auto;
+  padding: 30px;
+  width: 400px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 40px;
+  justify-content: space-between;
 }
 
-.btn-subscribe {
-  border: none;
+.footer__link{
+  color: #000;
+  border: 1px solid #fff;
+  padding: 4px 12px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+
+.footer__link:hover{
   cursor: pointer;
-  appearance: none;
-  background-color: inherit;
-  transition: transform 0.7s ease-in-out;
-  margin-left: 10px;
 }
 
-.btn-subscribe:hover {
-  transform: rotate(360deg);
-}
-
-.img-email {
-  width: 70px;
-  height: 70px;
-}
-
-input[type="email"] {
-  padding: 10px;
-  border: 2px solid #314de4;
-  outline: none;
-  border-radius: 5px;
-  font-size: 24px;
-  color: #314de4;
-}
-
-.subscribe {
-  font-size: 60px;
-  color: #314de4;
-  font-family: Arial;
-}
-
-.footer-block {
-  width: 300px;
-  padding: 70px;
-}
-.footer-column {
-}
-
-.footer-social {
-}
-.social-link {
-}
-.social-icon {
-}
-
-footer p {
+.footer__bottom{
   display: flex;
-  font-size: 24px;
-  margin: 0;
-  padding: 0;
   justify-content: center;
 }
+
