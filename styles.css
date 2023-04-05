@@ -5,7 +5,7 @@ body {
   background-color: #f8f9fa;
   color: rgb(12, 51, 12);
   margin: 0 auto;
-  font-family: "Poppins";
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: normal;
 }
 
@@ -74,7 +74,7 @@ header {
 .header-link {
   height: 50px;
   font-size: 24px;
-  font-family: "Poppins";
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   align-items: center;
 }
 
@@ -136,6 +136,8 @@ header {
   width: auto;
   padding: 0px 150px;
   height: 520px;
+  text-transform: uppercase;
+
 }
 
 .container__frame {
@@ -146,9 +148,9 @@ header {
 
 .prompt-eng {
   color: #070b30;
-  font-family: "Poppins";
   padding: 35px;
   border: 1px solid grey;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .column-benefits {
@@ -164,8 +166,16 @@ header {
 element.style {
 }
 
+.img-mac{
+  display: flex;
+  position: relative;
+}
 
 .block-video {
+  display: flex;
+  position: absolute;
+  margin-left: 120px;
+  margin-top: 30px; 
 }
 
 /* ==== slider ===================================== */
@@ -228,7 +238,7 @@ element.style {
   display: flex;
 }
 .container {
-  font-family: "Poppins";
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   position: relative;
   overflow: hidden;
   margin: 10px;
@@ -299,7 +309,7 @@ element.style {
 
 figure.snip1390 {
   position: relative;
-  font-family: "Roboto";
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   position: relative;
   overflow: hidden;
   margin: 10px;
@@ -351,7 +361,7 @@ figure.snip1390 blockquote {
   position: relative;
 }
 figure.snip1390 blockquote:before {
-  font-family: "Poppins";
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   content: "\201C";
   position: absolute;
   font-size: 70px;
