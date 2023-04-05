@@ -330,6 +330,12 @@ element.style {
   font-size: 20px;
   border-radius: 8px;
 }
+
+.btn-buy-all:hover{
+  background-color: rgb(206, 45, 123);
+
+
+}
 /* ==== testimonials ================================================================== */
 .testimonials {
   display: flex;
